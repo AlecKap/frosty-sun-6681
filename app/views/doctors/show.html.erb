@@ -16,6 +16,8 @@
   <ul>
     <% @doctor.patients.each do |pt| %>
       <li><%= pt.name %></li>
+      <%= button_to "Remove #{pt.name}", doctor_patient_path(@doctor, pt), method: :delete %>
+      <br>
     <% end %>
   </ul>
 </div>
