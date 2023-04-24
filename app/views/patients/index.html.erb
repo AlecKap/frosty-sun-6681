@@ -1,0 +1,18 @@
+<h1>Patients Index Page</h1>
+
+<div id="adult_patients">
+<h2>Patients age 18 or older</h2>
+  <% @patients.adult_patients.each do |pt| %>
+    <h3>Name: <%= pt.name %></h3>
+    <h3>Age: <%= pt.age %></h3>
+  <% end %>
+</div>
+<br>
+<div id="non_adult_patients">
+<h2>Patients under the age of 18</h2>
+   <% @patients.non_adult_patients.each do |pt| %>
+    <h3>Name: <%= pt.name %></h3>
+    <h3>Age: <%= pt.age %></h3>
+    <br>
+  <% end %>
+<div>

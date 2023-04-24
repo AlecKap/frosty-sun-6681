@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'doctors show page' do
+RSpec.describe 'doctor show page' do
   before :each do
     test_data
     visit doctor_path(@doc1)

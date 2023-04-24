@@ -5,4 +5,8 @@ class PatientsController < ApplicationController
     @patient.doctors.delete(@doctor)
     redirect_to doctor_path(@doctor)
   end
+
+  def index
+    @patients = Patient.all
+  end
 end
